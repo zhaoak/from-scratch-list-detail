@@ -30,12 +30,13 @@ export function renderBreedDetails(breed) {
     // create elements
     const breedDetailContainer = document.createElement('section');
     const breedImgEl = document.createElement('img');
-    const breedNameEl = document.createElement('h2');
+    const breedNameEl = document.createElement('h1');
     const breedTypeOriginContainerEl = document.createElement('div');
     const breedTypeEl = document.createElement('p');
     const breedOriginEl = document.createElement('p');
     const breedCoatLengthEl = document.createElement('p');
     const breedCoatPatternEl = document.createElement('p');
+    const br = document.createElement('br');
     const breedVerdictLabelEl = document.createElement('h2');
     const breedVerdictEl = document.createElement('h4');
 
@@ -50,6 +51,7 @@ export function renderBreedDetails(breed) {
     breedVerdictEl.textContent = breed.verdict;
 
     // add classes
+    breedDetailContainer.classList.add('breed-detail-container');
     breedImgEl.classList.add('breed-detail-image');
     breedNameEl.classList.add('breed-name-display');
     breedTypeOriginContainerEl.classList.add('breed-type-origin-container');
@@ -68,6 +70,7 @@ export function renderBreedDetails(breed) {
         breedTypeOriginContainerEl,
         breedCoatLengthEl,
         breedCoatPatternEl,
+        br,
         breedVerdictLabelEl,
         breedVerdictEl
     );

@@ -22,9 +22,14 @@ header {
 .breed-detail-container {
     display: flex;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     flex-flow: column nowrap;
     align-items: center;
     background-color: burlywood;
+    border: thick double darkslategrey;
+    line-height: 0.1;
 }
 
 .breed-detail-image-container {
@@ -36,30 +41,37 @@ header {
 }
 
 .breed-detail-image {
+    margin-top: 15px;
     min-height: 25%;
     max-height: 60%;
     max-width: 90%;
+    border: thick dashed grey;
 }
 
 .breed-name-display {
     text-decoration-line: underline;
+    font-size: 2.5rem;
 }
 
 .breed-type-origin-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    gap: 100px;
 }
 
 .breed-text-styling {
     font-size: 2em;
+    font-style: italic;
 }
 
 .verdict-text-label {
     text-decoration-line: underline;
     text-decoration-thickness: bolder;
+    font-size: 2.3em;
 }
 
 .verdict-text {
     text-decoration-thickness: bolder;
+    font-size: 2em;
 }

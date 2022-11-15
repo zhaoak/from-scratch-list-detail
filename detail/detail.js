@@ -18,18 +18,20 @@ window.addEventListener('load', async () => {
     // fetch breed data using id
     breedDetails = await fetchBreedData(id);
 
-    // check for errors in data retrieval
-    if (breedDetails === -1) {
-        displayErrorMessage();
-        return;
-    }
-    console.log(breedDetails);
-
+    // render data to page
     displayBreedDetails(breedDetails);
 });
 
 /* Display Functions */
 function displayBreedDetails(breed) {
+    // check for errors in data retrieval
+    if (breedDetails === -1) {
+        displayErrorMessage();
+        return;
+    }
+
+    // edit titlebar, append data to page
     breedTitlebarEl.textContent = breed.breed;
+    breedDetailEl.textContent = '';
     breedDetailEl.append(renderBreedDetails(breed));
 }

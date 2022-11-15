@@ -10,7 +10,10 @@ let breeds = [];
 
 /* Events */
 window.addEventListener('load', async () => {
+    // fetch breed list data
     breeds = await fetchBreeds();
+
+    // render data to page
     displayBreedList();
 });
 
@@ -21,7 +24,6 @@ function displayBreedList() {
         displayErrorMessage();
         return;
     }
-    console.log(breeds);
     breedListEl.textContent = '';
     for (let breed of breeds) {
         breedListEl.append(renderBreedCard(breed));
