@@ -59,4 +59,4 @@ Some cat breeds with my frankly unwarranted opinions on them.
 
 ### Fetch
 - `fetchBreeds()` - returns array of all breeds with all data from database
-- `fetchBreedData(breed)` - returns object for specific breed
+- `fetchBreedData(id)` - returns object for specific breed by id

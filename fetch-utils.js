@@ -12,3 +12,13 @@ export async function fetchBreeds() {
     }
     return response.data;
 }
+
+export async function fetchBreedData(id) {
+    // find single breed matching id from arg
+    const query = client.from('cat_breeds').select().match({ id: id }).single();
+    const response = await query;
+    if (response.error) {
+        return -1;
+    }
+    return response.data;
+}

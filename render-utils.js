@@ -14,13 +14,15 @@ export function renderBreedCard(breed) {
     breedCardEl.href = `./detail/index.html?id=${breed.id}`;
     breedNameEl.textContent = breed.breed;
     breedImgEl.src = breed.image;
-    breedImgEl.alt = `An image of a ${breed.breed}.`;
+    breedImgEl.alt = `An image of the ${breed.breed} breed.`;
     breedTypeEl.textContent = breed.type;
     breedOriginEl.textContent = breed.origin;
 
     breedCardEl.append(breedNameEl, breedImgEl, breedTypeEl, breedOriginEl);
     return breedCardEl;
 }
+
+export function renderBreedDetails(breed) {}
 
 export function displayErrorMessage() {
     alert('Could not load information from database.');

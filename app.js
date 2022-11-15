@@ -16,12 +16,12 @@ window.addEventListener('load', async () => {
 
 /* Display Functions */
 function displayBreedList() {
+    // check for errors
     if (breeds === -1) {
-        // check for errors
         displayErrorMessage();
         return;
     }
-
+    console.log(breeds);
     breedListEl.textContent = '';
     for (let breed of breeds) {
         breedListEl.append(renderBreedCard(breed));
