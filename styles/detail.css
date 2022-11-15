@@ -57,7 +57,7 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    gap: 100px;
+    gap: 10em;
 }
 
 .breed-text-styling {
@@ -68,10 +68,13 @@ header {
 .verdict-text-label {
     text-decoration-line: underline;
     text-decoration-thickness: bolder;
-    font-size: 2.3em;
+    font-size: 2.25em;
+    font-family: 'Roboto Slab', monospace;
+    color: darkred;
 }
 
 .verdict-text {
     text-decoration-thickness: bolder;
-    font-size: 2em;
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', monospace;
 }
