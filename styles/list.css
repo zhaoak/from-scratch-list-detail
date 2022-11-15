@@ -3,4 +3,29 @@ body {
 }
 
 #breed-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.breed-card {
+    border: thick double gray;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.breed-card-name {
+    text-decoration-line: underline;
+}
+
+.breed-card-img {
+    border: thin dashed gray;
+}
+
+.breed-card-type {
+    text-decoration-thickness: bold;
+}
+
+.breed-card-origin {
+    text-decoration-thickness: bold;
 }
