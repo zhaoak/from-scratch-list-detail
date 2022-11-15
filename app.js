@@ -11,7 +11,6 @@ let breeds = [];
 /* Events */
 window.addEventListener('load', async () => {
     breeds = await fetchBreeds();
-    console.log(breeds);
     displayBreedList();
 });
 

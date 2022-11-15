@@ -1,9 +1,9 @@
 export function renderBreedCard(breed) {
-    const breedCardEl = document.createElement('div');
-    const breedNameEl = document.createElement('h5');
+    const breedCardEl = document.createElement('a');
+    const breedNameEl = document.createElement('h3');
     const breedImgEl = document.createElement('img');
-    const breedTypeEl = document.createElement('h6');
-    const breedOriginEl = document.createElement('h6');
+    const breedTypeEl = document.createElement('h4');
+    const breedOriginEl = document.createElement('h4');
 
     breedCardEl.classList.add('breed-card');
     breedNameEl.classList.add('breed-card-name');
