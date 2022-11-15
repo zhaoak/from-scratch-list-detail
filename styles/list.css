@@ -2,6 +2,10 @@ body {
     text-align: center;
 }
 
+header {
+    justify-content: center;
+}
+
 #breed-list {
     display: flex;
     flex-flow: row wrap;
