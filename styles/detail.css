@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-to-list-link-titlebar {
+    left: 15px;
+    position: absolute;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+#breed-name-titlebar {
+    text-decoration-line: underline;
+}
+
+#breed-detail-area {
+    display: flex;
+    margin-top: 15px;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.breed-detail-area-styling {
+    background-color: burlywood;
+}
+
+.breed-detail-image-container {
+    height: 30%;
+    width: 90%;
+    margin: 0px 15px 0px 15px;
+    border: thick double darkslategrey;
+    background-color: grey;
+}
+
+.breed-detail-image {
+    min-height: 25%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.breed-name-display {
+    text-decoration-line: underline;
+}
+
+.breed-type-origin-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.breed-coat-info {
+    text-align: center;
+}
+
+.verdict-text-label {
+    text-decoration-line: underline;
+    text-decoration-thickness: bolder;
+}
+
+.verdict-text {
+    text-decoration-thickness: bolder;
+}
