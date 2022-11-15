@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: linen;
+    background-color: cornsilk;
 }
 
 header {
@@ -8,6 +8,7 @@ header {
     align-items: center;
     gap: 10px;
     justify-content: center;
+    font-family: 'Roboto Slab', monospace;
 }
 
 a {
@@ -26,16 +27,18 @@ a {
 .breed-card {
     height: 30rem;
     width: 20rem;
-    border: thick double gray;
-    background-color: cornsilk;
+    border: thick ridge darkorange;
+    background-color: blanchedalmond;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.4);
 }
 
 .breed-card-name {
     text-decoration-line: underline;
+    font-family: 'Roboto Slab', monospace;
 }
 
 .breed-card-img {
