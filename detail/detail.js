@@ -14,8 +14,15 @@ window.addEventListener('load', async () => {
     // grab id from URL
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
+
     // fetch breed data using id
     breedDetails = await fetchBreedData(id);
+
+    // check for errors in data retrieval
+    if (breedDetails === -1) {
+        displayErrorMessage();
+        return;
+    }
     console.log(breedDetails);
 });
 
