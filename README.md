@@ -1,27 +1,61 @@
-## The Golden Rule:
+# Cat Opinion Database
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+Some cat breeds with my frankly unwarranted opinions on them.
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+"From Scratch" exercise for Alchemy Code Lab
 
-## Making a plan
+## Wireframe
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+![wireframe diagram of page layout](./assets/wireframe.png)
 
-Additional considerations:
+## Plan
+1. database setup and data entry
+2. wireframe
+3. basic html/css layout for both pages
+4. get breed select page working
+    - first fetch functions, then render, then display
+5. get breed detail page working
+    - same substeps as 4
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+## HTML Elements
+#### For select page
+- page header with title
+- instructions to click on breed for detail
+- dynamically generated breed list, display cards for each
+    - each card contains breed name, origin, type, image
+    - cards are clickable and take user to breed detail page
+
+#### For details page
+- page header with title
+- link back to select page
+- full breed info, image
+- big header at bottom with verdict
+- link back to list at bottom of page
+
+## State
+#### For select page
+- `breeds` - array containing list of breeds
+
+## Events
+#### For select page
+- on page load:
+    - fetch breed list from database
+    - render
+    - display as cards
+
+- on click card:
+    - nav to `./details/index.html?id=<id>`
+    - details page loads appropriate data based on id in URL
+
+## Functions
+### Render
+- `renderBreedCard(breed)` - returns div containing breed card for select page
+- `renderBreedDetails(breed)` - returns div containing breed details for detail page
+
+### Display
+- `displayBreedList()` - display breeds on select page
+- `displayBreedDetails(breed)` - displays breed details on detail page
+
+### Fetch
+- `fetchBreeds()` - returns array of all breeds with all data from database
+- `fetchBreedData(breed)` - returns object for specific breed
