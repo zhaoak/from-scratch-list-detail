@@ -10,22 +10,17 @@ header {
 }
 
 #breed-list {
-    margin-top: 2rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     gap: 15px;
 }
 
 .breed-card {
-    height: 30rem;
-    width: 20rem;
+    height: 3rem;
+    width: 1rem;
     border: thick double gray;
-    background-color: cornsilk;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .breed-card-name {
