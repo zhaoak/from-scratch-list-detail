@@ -36,7 +36,6 @@ export function renderBreedDetails(breed) {
     const breedOriginEl = document.createElement('p');
     const breedCoatLengthEl = document.createElement('p');
     const breedCoatPatternEl = document.createElement('p');
-    const br = document.createElement('br');
     const breedVerdictLabelEl = document.createElement('h2');
     const breedVerdictEl = document.createElement('h4');
 
@@ -69,7 +68,6 @@ export function renderBreedDetails(breed) {
         breedTypeOriginContainerEl,
         breedCoatLengthEl,
         breedCoatPatternEl,
-        br,
         breedVerdictLabelEl,
         breedVerdictEl
     );

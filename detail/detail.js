@@ -24,6 +24,12 @@ window.addEventListener('load', async () => {
         return;
     }
     console.log(breedDetails);
+
+    displayBreedDetails(breedDetails);
 });
 
 /* Display Functions */
+function displayBreedDetails(breed) {
+    breedTitlebarEl.textContent = breed.breed;
+    breedDetailEl.append(renderBreedDetails(breed));
+}
