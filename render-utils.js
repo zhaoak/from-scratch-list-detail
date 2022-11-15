@@ -21,3 +21,7 @@ export function renderBreedCard(breed) {
     breedCardEl.append(breedNameEl, breedImgEl, breedTypeEl, breedOriginEl);
     return breedCardEl;
 }
+
+export function displayErrorMessage() {
+    alert('Could not load information from database.');
+}

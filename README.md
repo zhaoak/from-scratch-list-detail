@@ -55,6 +55,7 @@ Some cat breeds with my frankly unwarranted opinions on them.
 ### Display
 - `displayBreedList()` - display breeds on select page
 - `displayBreedDetails(breed)` - displays breed details on detail page
+- `displayErrorMessage()` - display error alert if application can't communicate with database
 
 ### Fetch
 - `fetchBreeds()` - returns array of all breeds with all data from database
