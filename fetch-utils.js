@@ -10,5 +10,6 @@ export async function fetchBreeds() {
     if (response.error) {
         return -1;
     }
+    console.log(response.data);
     return response.data;
 }
