@@ -5,6 +5,7 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function fetchBreeds() {
+    // return list of all breeds
     const query = client.from('cat_breeds').select('*').limit(100);
     const response = await query;
     if (response.error) {

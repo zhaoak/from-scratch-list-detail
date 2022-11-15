@@ -19,14 +19,11 @@ header {
     text-decoration-line: underline;
 }
 
-#breed-detail-area {
+.breed-detail-container {
     display: flex;
     margin-top: 15px;
     flex-flow: column nowrap;
     align-items: center;
-}
-
-.breed-detail-area-styling {
     background-color: burlywood;
 }
 
@@ -40,8 +37,8 @@ header {
 
 .breed-detail-image {
     min-height: 25%;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 60%;
+    max-width: 90%;
 }
 
 .breed-name-display {
@@ -54,8 +51,8 @@ header {
     justify-content: space-around;
 }
 
-.breed-coat-info {
-    text-align: center;
+.breed-text-styling {
+    font-size: 2em;
 }
 
 .verdict-text-label {
