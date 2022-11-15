@@ -1,10 +1,10 @@
 export function renderBreedCard(breed) {
     // create elements
     const breedCardEl = document.createElement('a');
-    const breedNameEl = document.createElement('h3');
+    const breedNameEl = document.createElement('h2');
     const breedImgEl = document.createElement('img');
-    const breedTypeEl = document.createElement('h4');
-    const breedOriginEl = document.createElement('h4');
+    const breedTypeEl = document.createElement('h3');
+    const breedOriginEl = document.createElement('h3');
 
     // add classes
     breedCardEl.classList.add('breed-card');
@@ -18,8 +18,8 @@ export function renderBreedCard(breed) {
     breedNameEl.textContent = breed.breed;
     breedImgEl.src = breed.image;
     breedImgEl.alt = `An image of the ${breed.breed} breed.`;
-    breedTypeEl.textContent = breed.type;
-    breedOriginEl.textContent = breed.origin;
+    breedTypeEl.textContent = `Type: ${breed.type}`;
+    breedOriginEl.textContent = `Origin: ${breed.origin}`;
 
     // append and return
     breedCardEl.append(breedNameEl, breedImgEl, breedTypeEl, breedOriginEl);

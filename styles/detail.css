@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: cornsilk;
 }
 
 header {
@@ -51,6 +52,7 @@ header {
 .breed-name-display {
     text-decoration-line: underline;
     font-size: 2.5rem;
+    font-family: 'Roboto Slab', monospace;
 }
 
 .breed-type-origin-container {

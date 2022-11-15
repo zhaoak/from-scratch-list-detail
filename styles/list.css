@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: linen;
 }
 
 header {
@@ -7,6 +8,11 @@ header {
     align-items: center;
     gap: 10px;
     justify-content: center;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
 }
 
 #breed-list {
@@ -39,9 +45,9 @@ header {
 }
 
 .breed-card-type {
-    text-decoration-thickness: bold;
+    color: black;
 }
 
 .breed-card-origin {
-    text-decoration-thickness: bold;
+    color: black;
 }
