@@ -8,12 +8,17 @@ header {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Roboto Slab', serif;
 }
 
 a {
     text-decoration-line: none;
     color: black;
+}
+
+.loading-message {
+    font-family: 'Roboto Slab', serif;
+    color: gray;
 }
 
 #breed-list {
@@ -38,7 +43,7 @@ a {
 
 .breed-card-name {
     text-decoration-line: underline;
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Roboto Slab', serif;
 }
 
 .breed-card-img {
