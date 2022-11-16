@@ -1,0 +1,101 @@
+body {
+    text-align: center;
+    background-color: cornsilk;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration-line: underline;
+    font-family: 'Roboto Slab', monospace;
+}
+
+#back-to-list-link-titlebar {
+    left: 15px;
+    position: absolute;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+#breed-name-titlebar {
+    text-decoration-line: underline;
+}
+
+.loading-message {
+    font-family: 'Roboto Slab', serif;
+    color: gray;
+}
+
+.breed-detail-container {
+    display: flex;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    border: 10px ridge darkorange;
+    box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.4);
+    gap: 1px;
+}
+
+.breed-detail-image-container {
+    height: 30%;
+    width: 90%;
+    margin: 0px 15px 0px 15px;
+    border: thick double darkslategrey;
+    background-color: grey;
+}
+
+.breed-detail-image {
+    margin-top: 15px;
+    min-height: 25%;
+    max-height: 60%;
+    max-width: 90%;
+    border: thick dashed darkslategrey;
+}
+
+.breed-name-display {
+    text-decoration-line: underline;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', monospace;
+    margin: 5px;
+}
+
+.breed-type-origin-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 5em;
+    margin: 7px;
+}
+
+.breed-text-styling {
+    font-size: 2em;
+    font-style: italic;
+    margin: 7px;
+}
+
+.verdict-text-label {
+    text-decoration-line: underline;
+    text-decoration-thickness: bolder;
+    font-size: 2.25em;
+    font-family: 'Roboto Slab', monospace;
+    color: darkred;
+    margin: 10px;
+}
+
+.verdict-text {
+    text-decoration-thickness: bolder;
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', monospace;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#back-to-list-link-bottom {
+    font-family: 'Roboto Slab', monospace;
+}

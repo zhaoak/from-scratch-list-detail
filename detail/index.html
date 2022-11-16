@@ -7,14 +7,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- title and favicon -->
-        <title>such beautiful babies</title>
+        <title>look at that snoot!!!</title>
 
         <!-- js -->
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="./detail.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
@@ -24,25 +24,26 @@
             href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
             rel="stylesheet"
         />
-
         <!-- css -->
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/list.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/detail.css" />
     </head>
 
     <body>
         <header>
-            <h1>Cat Breed List</h1>
+            <h3 id="back-to-list-link-titlebar"><a href="../">⇐ Go Back</a></h3>
+            <h1 id="breed-name-titlebar">Breed Details</h1>
         </header>
 
         <main>
-            <h2>Click an entry for more details.</h2>
-            <hr />
-
-            <section id="breed-list">
+            <section id="breed-detail-area">
                 <h2 class="loading-message">Loading...</h2>
             </section>
         </main>
+
+        <footer>
+            <h3 id="back-to-list-link-bottom"><a href="../">⇐ Go Back</a></h3>
+        </footer>
     </body>
 </html>
