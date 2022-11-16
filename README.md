@@ -1,6 +1,6 @@
 # Cat Opinion Database
 
-Some cat breeds with my frankly unwarranted opinions on them.
+Web app that displays some cat breeds, along with my (frankly unwarranted) opinions on them.
 
 "From Scratch" exercise for Alchemy Code Lab
 
@@ -35,6 +35,9 @@ Some cat breeds with my frankly unwarranted opinions on them.
 ## State
 #### For select page
 - `breeds` - array containing list of breeds
+
+#### For detail page
+- `breedDetails` - contains object with properties representing details for specific breed
 
 ## Events
 #### For select page
